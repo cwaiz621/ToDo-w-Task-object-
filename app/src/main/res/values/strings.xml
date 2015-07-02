@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ToDo</string>
+
+    <string name="TaskTitle">Add Task</string>
+    <string name="Submit">Submit</string>
+    <string name="TaskName">Task Name</string>
+    <string name="DateModified">Date Modified</string>
+    <string name="action_settings">Settings</string>
+</resources>

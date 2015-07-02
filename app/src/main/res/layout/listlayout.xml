@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="14dp">
+
+    <CheckBox
+        android:id="@+id/complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ViewSwitcher
+        android:id="@+id/vSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/complete"
+        android:layout_toEndOf="@+id/complete">
+
+        <TextView
+            android:id="@+id/Task"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/TaskName"/>
+
+        <EditText
+            android:id="@+id/editor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </ViewSwitcher>
+
+
+
+
+    <TextView
+        android:id="@+id/DateMod"
+        android:textColor="#00abff"
+        android:textSize="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DateModified"
+        android:layout_alignBottom="@+id/delete"
+        android:layout_alignLeft="@+id/vSwitcher"
+        android:layout_alignStart="@+id/vSwitcher" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>
